@@ -5,7 +5,8 @@ import TweetList from './TweetList';
 import NewTweetForm from './NewTweetForm';
 import Error404 from './Error404';
 import { Switch, Route } from 'react-router-dom';
-import OtherPeepsList from './OtherPeeps';
+import OtherPeeps from './OtherPeeps';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
   // var appBody = {
@@ -34,7 +35,7 @@ class App extends React.Component {
       <br></br>
       <br></br>
       <Profile/>
-      <OtherPeepsList/>
+      <OtherPeeps/>
       <Switch>
       <Route exact path='/' render={()=><TweetList tweetList={this.state.masterTweetList} />}  />
       <Route path='/newtweet' render={()=><NewTweetForm onNewTweetCreation={this.handleAddingNewTweetToList} />}  />
