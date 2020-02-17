@@ -49,7 +49,7 @@ top: '190px'
         <span></span>
       </div>
       <div style={bottomDiv}>
-        <span style={clamManStyle}>Clam Man</span>
+        <span style={clamManStyle}>Ocean Twitter</span>
         <br></br>
 
         <span style={clamManTweets}>Tweets Following Followers</span>

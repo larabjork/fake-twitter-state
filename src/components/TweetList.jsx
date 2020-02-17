@@ -1,31 +1,23 @@
 import React from 'react';
 import Tweet from './Tweet';
+import PropTypes from 'prop-types';
 
-var masterTweetList = [
-  {
-    title: 'Barnacles',
-    body: 'Very briny. And wet. And salty?',
-  },
-  {
-    title: 'Mussels',
-    body: 'Do you want to tapdance?',
-  },
-  {
-    title: 'Oysters',
-    body: 'Totalitarianism is emminant and I have ennui.',
-  }
-];
 
-function TweetList(){
+
+function TweetList(props){
   return (
     <div>
-      {masterTweetList.map((tweet, index) =>
+      {props.tweetList.map((tweet) =>
         <Tweet title={tweet.title}
           body={tweet.body}
-          key={index}/>
+          key={tweet.id}/>
       )}
     </div>
   );
 }
+
+TweetList.propTypes = {
+  tweetList: PropTypes.array
+};
 
 export default TweetList;
