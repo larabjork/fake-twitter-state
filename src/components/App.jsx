@@ -7,11 +7,9 @@ import Error404 from './Error404';
 import { Switch, Route } from 'react-router-dom';
 import OtherPeeps from './OtherPeeps';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col } from 'react-bootstrap';
 
 class App extends React.Component {
-  // var appBody = {
-  //   textAlign: 'center'
-  // }
 
   constructor(props) {
     super(props);
@@ -28,14 +26,21 @@ class App extends React.Component {
   }
 
   render(){
+    var appBody = {
+      textAlign: 'center'
+    }
+
+
     return (
-      <div>
+      <div style={appBody}>
       <Header/>
       <br></br>
       <br></br>
       <br></br>
       <Profile/>
+      <div>
       <OtherPeeps/>
+      </div>
       <Switch>
       <Route exact path='/' render={()=><TweetList tweetList={this.state.masterTweetList} />}  />
       <Route path='/newtweet' render={()=><NewTweetForm onNewTweetCreation={this.handleAddingNewTweetToList} />}  />

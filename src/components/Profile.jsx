@@ -1,45 +1,47 @@
+
 import React from "react";
 
 function Profile(props){
-  var allProfile = {
-    border: "solid lightgrey",
-    borderWidth: "1px",
-    borderColor: "lightgrey",
-    width: "308px",
-    height: "308px",
-    marginTop: "20px"
-  }
+var allProfile = {
+  border: "solid lightgrey",
+  borderWidth: "1px",
+  borderColor: "lightgrey",
+  width: "308px",
+  height: "308px",
+  marginTop: "20px"
+}
 
 var topDiv = {
-  height: '50%',
-  backgroundColor: "lightgrey"
+height: '50%',
+backgroundColor: "lightgrey"
 }
 
 var bottomDiv = {
-  height: '50%',
+height: '50%',
 backgroundColor: "lightblue"
 }
 
 var clamManStyle= {
-  fontWeight: 'bold',
-  fontSize: '1.5rem',
-  marginLeft: '70px',
+fontWeight: 'bold',
+fontSize: '1.5rem',
+marginLeft: '70px',
+marginBottom: '30px'
 
 }
 
 var clamManTweets= {
-  marginTop: '160px',
-  fontSize: '1rem',
-  marginLeft: '5px',
-  lineHeight: '5rem',
-  wordSpacing: '20px'
+marginTop: '160px',
+fontSize: '1rem',
+marginLeft: '5px',
+lineHeight: '5rem',
+wordSpacing: '20px'
 }
 
 var clamImage = {
-  width: '90px',
-  position: 'absolute',
+width: '90px',
+position: 'absolute',
 left: '20px',
-top: '190px'
+top: '200px'
 }
 
   return (

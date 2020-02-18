@@ -4,6 +4,8 @@ import { FaFish } from 'react-icons/fa';
 
 class Tweet extends React.Component {
 
+
+
   constructor(props) {
     super(props);
     this.state = {
@@ -19,8 +21,15 @@ class Tweet extends React.Component {
 
 
 render() {
+  var tweetBox = {
+    textAlign: 'center',
+    border: '2px solid black',
+    borderRadius: '5px',
+    marginBottom: '20px',
+    width: '300px'
+  }
   return (
-    <div>
+    <div style={tweetBox}>
     <h3> {this.props.title}</h3>
     <p>{this.props.body}</p>
     <a><FaFish onClick={this.increaseFishCount}/></a><span>{this.state.fishCount}</span>
@@ -35,12 +44,3 @@ Tweet.propTypes = {
 };
 
 export default Tweet;
-
-//
-// var tweetBox = {
-//   textAlign: 'center',
-//   border: '2px solid black',
-//   borderRadius: '5px',
-//   marginBottom: '20px',
-//   width: '300px'
-// }
